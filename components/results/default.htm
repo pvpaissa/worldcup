@@ -7,3 +7,11 @@
 {% partial __SELF__~'::_en_nav' %}
 {% partial __SELF__~'::en_results' %}
 {% endif %}
+<!-- Scripts -->
+<script src="{{ [
+            'assets/js/jquery.min.js',
+            'assets/js/popper.min.js',
+            'assets/js/bootstrap.min.js',
+            '@framework',
+            '@framework.extras'
+        ]|theme }}"></script>
