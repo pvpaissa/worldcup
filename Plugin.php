@@ -43,6 +43,7 @@ class Plugin extends PluginBase
             //Temp
             'Cleanse\WorldCup\Components\Teams'        => 'cleanseCupTeams',
             'Cleanse\WorldCup\Components\Setup'        => 'cleanseCupSetup',
+            'Cleanse\WorldCup\Components\AdminPrize'   => 'cleanseCupAdminPrize',
 
             //Recruit App
             'Cleanse\WorldCup\Components\Recruits'     => 'cleanseCupRecruits',

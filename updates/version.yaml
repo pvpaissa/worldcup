@@ -6,3 +6,6 @@
 1.1.1:
   - Added 'Teams' section.
   - add_team_players_tables.php
+1.2:
+  - Added 'Prizes' section.
+  - add_prize_table.php

@@ -1,0 +1,24 @@
+<div class="basic-page">
+    <div class="container">
+        <div class="page-title">
+            <h1><a href="/events/manage">Manage</a> Prize</h1>
+            <div class="sub-box"></div>
+        </div>
+    </div>
+
+    <div class="container basic-content">
+        <form data-request="onUpdatePrize">
+
+            <div class="form-group">
+                <label for="event-prize">Event Prize</label>
+                <input id="event-prize" name="event-prize" type="text" class="form-control form-control-lg"
+                       placeholder="Event Prize" value="{{ prize }}">
+            </div>
+
+            <button type="submit" class="btn btn-info">
+                Update
+            </button>
+
+        </form>
+    </div>
+</div>
