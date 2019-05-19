@@ -23,6 +23,7 @@ class Results extends ComponentBase
         $this->page['lang'] = $this->getLanguage();
         $this->page['regions'] = $this->regionNames();
         $this->page['regionals'] = $this->getRegionalQualifiers();
+        $this->page['main_groups'] = $this->getMainGroups();
     }
 
     private function regionNames()
@@ -69,6 +70,36 @@ class Results extends ComponentBase
                 'links' => [
                     'Bracket Stage' => 'fwc-na-regional-qualifiers'
                 ]
+            ]
+        ];
+    }
+
+    private function getMainGroups()
+    {
+        return [
+            'groups' => [
+                '1' => [
+                    'CrimeWolf',
+                    'bUrself',
+                    'Trois Pourcents'
+                ],
+                '2' => [
+                    'Gangster Inn',
+                    'Suboptimal',
+                    'A-Pork-Calypse'
+                ],
+                '3' => [
+                    'Sfidante',
+                    'Lester and Friends',
+                    'Who?'
+                ],
+                '4' => [
+                    'Z†Fanclub',
+                    'Insert Name'
+                ],
+            ],
+            'links' => [
+                'Main Event: Group Stage' => 'the-feast-world-cup-main-event-group-stage'
             ]
         ];
     }

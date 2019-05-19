@@ -1,0 +1,37 @@
+<div class="accordion mb-1" id="accordionMainGroups">
+    {% for key, group in main_groups.groups %}
+    <div class="card">
+        <div class="card-header" id="mg-{{ key }}">
+            <h2 class="mb-0">
+                <button class="btn btn-jp-link btn-block" type="button"
+                        data-toggle="collapse" data-target="#collapse-mg-{{ key }}"
+                        aria-expanded="false" aria-controls="collapse-mg-{{ key }}">
+                    Group {{ key }}
+                </button>
+            </h2>
+        </div>
+
+        <div id="collapse-mg-{{ key }}" class="collapse" data-parent="#accordionMainGroups">
+            <div class="card-body">
+                <div class="team-wrapper jp media">
+                {% set placement = 1 %}
+                {% for team in group %}
+                    <h3 class="mb-0 mr-2">{{ placement }}</h3>
+                    <div class="media-body">
+                        <h5 class="mt-0">{{ team }}</h5>
+                    </div>
+                {% set placement = placement + 1 %}
+                {% endfor %}
+                </div>
+
+                <hr>
+                {% for key, l in main_groups['links'] %}
+                <a class="btn btn-primary btn-block" href="/event/{{ l }}" target="_blank">{{ region }} {{ key }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <p class="mt-2 mb-0">* Note that only the top two from each group qualify for the main event bracket phase.</p>
+</div>
