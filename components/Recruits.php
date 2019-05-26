@@ -20,6 +20,8 @@ class Recruits extends ComponentBase
 
     public function onRun()
     {
+        return Redirect::to('/recruitment');
+
         $this->page['lang']   = $this->getLanguage();
         $this->page['recruited'] = $this->getRecruitCookie();
         $this->page['recruits'] = $this->getRecruits();
